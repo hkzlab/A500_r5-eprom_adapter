@@ -635,43 +635,6 @@ D6-H
 Text Label 4800 5300 2    50   ~ 0
 D7-H
 $Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5E29DDBC
-P 5650 4300
-F 0 "J1" H 5758 4481 50  0000 C CNN
-F 1 "PWR" H 5758 4390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5650 4300 50  0001 C CNN
-F 3 "~" H 5650 4300 50  0001 C CNN
-	1    5650 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 4300 5850 4300
-Wire Wire Line
-	6000 4400 5850 4400
-$Comp
-L power:VCC #PWR0110
-U 1 1 5E2AD6C3
-P 6000 4300
-F 0 "#PWR0110" H 6000 4150 50  0001 C CNN
-F 1 "VCC" V 6000 4500 50  0000 C CNN
-F 2 "" H 6000 4300 50  0001 C CNN
-F 3 "" H 6000 4300 50  0001 C CNN
-	1    6000 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5E2B5B95
-P 6000 4400
-F 0 "#PWR0111" H 6000 4150 50  0001 C CNN
-F 1 "GND" V 6005 4272 50  0000 R CNN
-F 2 "" H 6000 4400 50  0001 C CNN
-F 3 "" H 6000 4400 50  0001 C CNN
-	1    6000 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5E2C63FF
 P 5650 4850
@@ -733,20 +696,9 @@ U 1 1 5E2DFC6C
 P 7400 4900
 F 0 "C1" H 7492 4946 50  0000 L CNN
 F 1 "100nF" H 7492 4855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7400 4900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7400 4900 50  0001 C CNN
 F 3 "~" H 7400 4900 50  0001 C CNN
 	1    7400 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5E2E10E2
-P 7850 4900
-F 0 "C2" H 7942 4946 50  0000 L CNN
-F 1 "100nF" H 7942 4855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7850 4900 50  0001 C CNN
-F 3 "~" H 7850 4900 50  0001 C CNN
-	1    7850 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -772,19 +724,9 @@ F 3 "" H 8250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 5000 7850 5000
-Wire Wire Line
-	7850 5000 8250 5000
-Wire Wire Line
 	8250 5000 8250 5050
-Connection ~ 7850 5000
 Wire Wire Line
 	8250 4750 8250 4800
-Wire Wire Line
-	8250 4800 7850 4800
-Wire Wire Line
-	7850 4800 7400 4800
-Connection ~ 7850 4800
 $Comp
 L Device:R_Network10_US RN1
 U 1 1 5E3011D5
@@ -800,4 +742,25 @@ Wire Wire Line
 	1200 1800 1000 1800
 Text Label 1000 1800 0    50   ~ 0
 A8
+Wire Wire Line
+	7400 4800 7850 4800
+Wire Wire Line
+	7400 5000 7850 5000
+$Comp
+L Device:C_Small C2
+U 1 1 5E2DF26F
+P 7850 4900
+F 0 "C2" H 7942 4946 50  0000 L CNN
+F 1 "100nF" H 7942 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7850 4900 50  0001 C CNN
+F 3 "~" H 7850 4900 50  0001 C CNN
+	1    7850 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 4800
+Wire Wire Line
+	7850 4800 8250 4800
+Connection ~ 7850 5000
+Wire Wire Line
+	7850 5000 8250 5000
 $EndSCHEMATC
