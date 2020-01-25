@@ -62,7 +62,7 @@
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
-      (usegerberextensions false)
+      (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
@@ -84,9 +84,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "gerbers-plcc32-invert"))
   )
 
   (net 0 "")
@@ -826,7 +826,7 @@
     )
   )
 
-  (gr_text tabaglio@posteo.net (at 116.84 124.46) (layer F.SilkS)
+  (gr_text tabaglio@posteo.net (at 127 124.46) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15) italic))
   )
   (gr_text "A500 rev.5\n27C0x0 ROM Adapter" (at 118.11 101.6 90) (layer F.SilkS)
@@ -1588,7 +1588,7 @@
   (segment (start 125.73 120.65) (end 125.73 121.7753) (width 0.25) (layer B.Cu) (net 40))
   (via (at 141.0863 79.6083) (size 0.8) (layers F.Cu B.Cu) (net 40))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5E2C4141) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1667,7 +1667,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5E2C413E) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
