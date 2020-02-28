@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "A500 EPROM Adapter DIP"
 Date ""
-Rev ""
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -635,43 +635,6 @@ D6-H
 Text Label 4800 5300 2    50   ~ 0
 D7-H
 $Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5E29DDBC
-P 5650 4300
-F 0 "J1" H 5758 4481 50  0000 C CNN
-F 1 "PWR" H 5758 4390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5650 4300 50  0001 C CNN
-F 3 "~" H 5650 4300 50  0001 C CNN
-	1    5650 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 4300 5850 4300
-Wire Wire Line
-	6000 4400 5850 4400
-$Comp
-L power:VCC #PWR0110
-U 1 1 5E2AD6C3
-P 6000 4300
-F 0 "#PWR0110" H 6000 4150 50  0001 C CNN
-F 1 "VCC" V 6000 4500 50  0000 C CNN
-F 2 "" H 6000 4300 50  0001 C CNN
-F 3 "" H 6000 4300 50  0001 C CNN
-	1    6000 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5E2B5B95
-P 6000 4400
-F 0 "#PWR0111" H 6000 4150 50  0001 C CNN
-F 1 "GND" V 6005 4272 50  0000 R CNN
-F 2 "" H 6000 4400 50  0001 C CNN
-F 3 "" H 6000 4400 50  0001 C CNN
-	1    6000 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5E2C63FF
 P 5650 4850
@@ -800,4 +763,54 @@ Wire Wire Line
 	1200 1800 1000 1800
 Text Label 1000 1800 0    50   ~ 0
 A8
+$Comp
+L Device:R_Small R1
+U 1 1 5E59C5C6
+P 2150 1500
+F 0 "R1" H 2209 1546 50  0000 L CNN
+F 1 "4k7" H 2209 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2150 1500 50  0001 C CNN
+F 3 "~" H 2150 1500 50  0001 C CNN
+	1    2150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5E59CC0A
+P 2400 1500
+F 0 "R2" H 2459 1546 50  0000 L CNN
+F 1 "4k7" H 2459 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2400 1500 50  0001 C CNN
+F 3 "~" H 2400 1500 50  0001 C CNN
+	1    2400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1600 2150 1900
+Wire Wire Line
+	2400 1600 2400 1900
+Text Label 2150 1900 0    50   ~ 0
+A18
+Text Label 2400 1900 0    50   ~ 0
+A19
+Wire Wire Line
+	2150 1400 2150 1300
+Wire Wire Line
+	2150 1300 2400 1300
+Wire Wire Line
+	2400 1300 2400 1400
+$Comp
+L power:VCC #PWR?
+U 1 1 5E5B6679
+P 2400 1100
+F 0 "#PWR?" H 2400 950 50  0001 C CNN
+F 1 "VCC" H 2417 1273 50  0000 C CNN
+F 2 "" H 2400 1100 50  0001 C CNN
+F 3 "" H 2400 1100 50  0001 C CNN
+	1    2400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1100 2400 1300
+Connection ~ 2400 1300
 $EndSCHEMATC
