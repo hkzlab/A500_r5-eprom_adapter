@@ -28,9 +28,9 @@ And the following for the Low part:
 
 ![A500 kickstart lo dump](pics/hd_lokick.png)
 
-The **High** part will have to be inserted in the slot marked as **H** and the low part in the slot marked as **L**.
+The **High** part will have to be inserted in the slot marked as **H** and the **Low** part in the slot marked as **L**.
 
-#### Eprom SLOTs
+#### EPROM slots
 
 Depending on which type of EPROM you use, you can fit a different number of Kickstart images in them.
 
