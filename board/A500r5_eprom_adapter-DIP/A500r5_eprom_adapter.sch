@@ -136,8 +136,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2000 4950 2000
 Wire Wire Line
-	5200 2100 4950 2100
-Wire Wire Line
 	3450 2100 3200 2100
 Wire Wire Line
 	3450 2300 3200 2300
@@ -266,8 +264,6 @@ Text Label 5200 1900 2    50   ~ 0
 A15
 Text Label 5200 2000 2    50   ~ 0
 A16
-Text Label 5200 2100 2    50   ~ 0
-A17
 Text Label 5200 3000 2    50   ~ 0
 D4-L
 Text Label 5200 2900 2    50   ~ 0
@@ -813,4 +809,35 @@ $EndComp
 Wire Wire Line
 	2400 1100 2400 1300
 Connection ~ 2400 1300
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 5F417023
+P 6200 1300
+F 0 "J4" H 6100 1300 50  0000 C CNN
+F 1 "A17 Selection" H 6200 1550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6200 1300 50  0001 C CNN
+F 3 "~" H 6200 1300 50  0001 C CNN
+	1    6200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1200 7050 1200
+Wire Wire Line
+	6400 1300 7050 1300
+Wire Wire Line
+	6400 1400 7050 1400
+Text Label 7050 1300 2    50   ~ 0
+A17
+Text Label 7050 1200 2    50   ~ 0
+SOCK_P1
+Text Label 7050 1400 2    50   ~ 0
+SOCK_P31
+Wire Wire Line
+	4950 2100 5550 2100
+Wire Wire Line
+	3450 1200 3000 1200
+Text Label 5550 2100 2    50   ~ 0
+SOCK_P31
+Text Label 3000 1200 0    50   ~ 0
+SOCK_P1
 $EndSCHEMATC

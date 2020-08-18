@@ -136,8 +136,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2000 4950 2000
 Wire Wire Line
-	5200 2100 4950 2100
-Wire Wire Line
 	3450 2100 3200 2100
 Wire Wire Line
 	3450 2300 3200 2300
@@ -266,8 +264,6 @@ Text Label 5200 1900 2    50   ~ 0
 A15
 Text Label 5200 2000 2    50   ~ 0
 A16
-Text Label 5200 2100 2    50   ~ 0
-A17
 Text Label 5200 3000 2    50   ~ 0
 D4-L
 Text Label 5200 2900 2    50   ~ 0
@@ -796,10 +792,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 1350 2350 1450
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0110
 U 1 1 5E5AE0F9
 P 2200 1150
-F 0 "#PWR?" H 2200 1000 50  0001 C CNN
+F 0 "#PWR0110" H 2200 1000 50  0001 C CNN
 F 1 "VCC" H 2217 1323 50  0000 C CNN
 F 2 "" H 2200 1150 50  0001 C CNN
 F 3 "" H 2200 1150 50  0001 C CNN
@@ -815,4 +811,35 @@ Text Label 2050 1900 0    50   ~ 0
 A18
 Text Label 2350 1900 0    50   ~ 0
 A19
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 5F3C08B3
+P 6250 1450
+F 0 "J4" H 6100 1450 50  0000 L CNN
+F 1 "A17 Selector" H 6200 1650 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6250 1450 50  0001 C CNN
+F 3 "~" H 6250 1450 50  0001 C CNN
+	1    6250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1450 7100 1450
+Text Label 7100 1450 2    50   ~ 0
+A17
+Wire Wire Line
+	6450 1350 7100 1350
+Text Label 7100 1350 2    50   ~ 0
+SOCK_P1
+Wire Wire Line
+	6450 1550 7100 1550
+Text Label 7100 1550 2    50   ~ 0
+SOCK_P31
+Wire Wire Line
+	4950 2100 5600 2100
+Text Label 5600 2100 2    50   ~ 0
+SOCK_P31
+Wire Wire Line
+	3450 1200 2850 1200
+Text Label 2850 1200 0    50   ~ 0
+SOCK_P1
 $EndSCHEMATC
