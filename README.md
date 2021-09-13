@@ -48,14 +48,14 @@ Depending on which type of EPROM you use, you can fit a different number of Kick
 
 A18 and A19 are pulled-up through 4.7k resistors.
 
-Every slot can host a 512kb Kickstart. If you wish to put a 256kb Kickstart in the slot, concatenate it with a copy of itself (be on the safe side!).
+Every slot can host a 512kb Kickstart. If you wish to put a 256kb Kickstart in the slot, concatenate it with a copy of itself (stay on the safe side!).
 
 To create an image to burn on the EPROMs I suggest following this procedure:
 
 1. Take the required Kickstarts
 2. Double the size of every 256kb Kickstary by concatenating it with a copy of itself
 3. Concatenate the desired Kickstart dumps
-4. Split the resulting binary file in hig+h and low halves
+4. Split the resulting binary file in high and low halves
 5. Burn the halves to their respective EPROMs
 
 The result will be like this for a 27C040:
@@ -80,7 +80,7 @@ You'll find two variants of the same board in this repository. One uses DIP32 EP
 
 PLCC32 version is a bit harder to solder, but is more compact.
 
-**Install RN1 and RN2 only if your Amiga lacks pull-up resistors on the data lines**. Also, the **R1 and R2 resistors are to be installed ONLY if you fit a 9-resistor bussed network** (so, 10 pin and not 11) on RN1 and RN2. 11 pin bussed arrays are a bit hard to come by, so you can fit a 10 pin one and install two discrete resistors to make up for the missing ones.
+**Install RN1 and RN2 only if your Amiga lacks pull-up resistors on the data lines**. Also, the **R1 and R2 resistors are to be installed ONLY if you fit a 9-resistor bussed network (so, 10 pin and not 11) or if you did not fit a resistor network at all** on RN1 and RN2. 11 pin bussed arrays are a bit hard to come by, so you can fit a 10 pin one and install two discrete resistors to make up for the missing ones.
 
 ### DIP32 Variant
 
