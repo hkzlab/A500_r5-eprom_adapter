@@ -8,8 +8,6 @@ The board includes sockets for pullup resistors that are oftentimes required (if
 
 The board accepts **two** 27C020/040/080 EPROMs programmed with concatenated Kickstart images.
 
-**WARNING:** Rev.2 is still untested!
-
 ## EPROMs Configuration
 
 The Amiga 500 uses a 16-bit bus to access the Kickstart, as such, the original ROM and its replacements must be 16-bit memories: expensive and annoying to program.
