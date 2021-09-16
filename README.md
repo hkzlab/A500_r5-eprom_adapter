@@ -30,6 +30,14 @@ And the following for the Low part:
 
 The **High** part will have to be inserted in the slot marked as **H** and the **Low** part in the slot marked as **L**.
 
+You can use the [srecord](http://srecord.sourceforge.net/) tool to split the files:
+
+```sh
+srec_cat -o LOW.bin -binary fullrom.bin -binary -split 2 0
+srec_cat -o HIGH.bin -binary fullrom.bin -binary -split 2 1
+
+```
+
 ### A500 rev.5 configuration
 
 The Amiga 500 rev.5 uses a non-standard pinout in its Kickstart socket: A17 line is connected to PIN 31, while it is normally on PIN 1 of the ROM chip.
