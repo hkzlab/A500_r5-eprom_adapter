@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "27c400-cache")(type "Legacy")(uri "${KIPRJMOD}/external_libs/27c400-cache.lib")(options "")(descr ""))
+  (lib (name "A500r5_eprom_adapter-plcc32-invert-rescue")(type "KiCad")(uri "${KIPRJMOD}/A500r5_eprom_adapter-plcc32-invert-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "Custom_Symbols")(type "KiCad")(uri "${KIPRJMOD}/external_libs/Custom_Symbols.kicad_sym")(options "")(descr ""))
+)
