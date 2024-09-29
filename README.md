@@ -59,7 +59,7 @@ Every slot can host a 512kb Kickstart. If you wish to put a 256kb Kickstart in t
 To create an image to burn on the EPROMs I suggest following this procedure:
 
 1. Take the required Kickstarts
-2. Double the size of every 256kb Kickstary by concatenating it with a copy of itself
+2. Double the size of every 256kb Kickstart by concatenating it with a copy of itself
 3. Concatenate the desired Kickstart dumps
 4. Split the resulting binary file in high and low halves
 5. Burn the halves to their respective EPROMs
@@ -82,7 +82,7 @@ SLOT 2 <   |    Kick B    |    Kick B    |
 
 ## Board Variants
 
-You'll find two variants of the same board in this repository. One uses DIP32 EPROMs, the other PLCC32. I advice to use sockets in both variants.
+You'll find two variants of the same board in this repository. One uses DIP32 EPROMs, the other PLCC32.
 
 PLCC32 version is a bit harder to solder, but is more compact.
 
