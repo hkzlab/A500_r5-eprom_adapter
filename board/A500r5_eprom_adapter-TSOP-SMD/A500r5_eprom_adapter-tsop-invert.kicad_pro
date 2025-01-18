@@ -668,7 +668,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerbers/rev0/",
+      "plot": "gerbers/rev1/",
       "pos_files": "",
       "specctra_dsn": "../../../A500r5_eprom_adapter-tsop-invert.dsn",
       "step": "",

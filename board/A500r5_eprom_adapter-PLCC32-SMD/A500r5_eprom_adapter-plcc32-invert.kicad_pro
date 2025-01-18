@@ -668,7 +668,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerbers/rev4/",
+      "plot": "gerbers/rev5/",
       "pos_files": "",
       "specctra_dsn": "../../../A500r5_eprom_adapter-plcc32-invert.dsn",
       "step": "",
